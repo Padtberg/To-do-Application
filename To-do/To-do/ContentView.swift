@@ -5,6 +5,7 @@
 //  Created by Jakob Padtberg on 21.10.23.
 
 import SwiftUI
+import Foundation
 
 struct Aufgabe: Identifiable {
     
@@ -23,7 +24,6 @@ struct ContentView: View {
     @State var aufgaben: [Aufgabe] = []
     
     var body: some View {
-        TabView {
             NavigationView {
                 VStack{
                     List () {
@@ -74,10 +74,11 @@ struct ContentView: View {
                 .navigationTitle("Meine Aufgaben")
                 
                 }
-            }
+            
         }
     }
 
+            
 #Preview {
     ContentView()
 }

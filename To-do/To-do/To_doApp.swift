@@ -12,6 +12,7 @@ struct To_doApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
+            TaskView()
         }
     }
 }
